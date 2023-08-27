@@ -1,0 +1,17 @@
+  <h1>{{mylabel}}</h1>
+  
+  <table border="2"> 
+        <tr *ngFor="let cert of certNames"> 
+         <td> {{ cert }}</td>
+        </tr>
+    </table>
+<p> People data as below</p>
+    <table border="2"> 
+        <tr *ngFor="let p of people;let i = index"> 
+         <td>{{i+1}}</td>
+            <td> {{ p.name }}</td>
+        </tr>
+    </table>
+
+    <button pbutton type="button" (click)="foo()">Click here</button>
+
